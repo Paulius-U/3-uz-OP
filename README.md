@@ -129,3 +129,26 @@ Failo suskirstymas:
 Is viso:
 
 ![image](https://user-images.githubusercontent.com/75576100/115123053-eb4c0900-9fc3-11eb-9de2-b2a27575065f.png)
+
+
+1.1v
+
+struktura pakeista klase:
+
+![image](https://user-images.githubusercontent.com/75576100/117547180-e7e1f580-b036-11eb-9974-ac7ed683cc30.png)
+
+
+Spartos skirtumas:
+![image](https://user-images.githubusercontent.com/75576100/117547138-ac472b80-b036-11eb-8468-07f482627154.png)
+![image](https://user-images.githubusercontent.com/75576100/117547142-b2d5a300-b036-11eb-99df-0ba74b597bed.png)
+
+
+
+Flegu sparta:
+
+![image](https://user-images.githubusercontent.com/75576100/117547154-c1bc5580-b036-11eb-8d12-1060477f779b.png)
+
+![image](https://user-images.githubusercontent.com/75576100/117547158-c97bfa00-b036-11eb-91b8-7f4d6a0fc839.png)
+
+![image](https://user-images.githubusercontent.com/75576100/117547160-cf71db00-b036-11eb-87ac-544e827e7039.png)
+
