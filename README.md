@@ -139,6 +139,7 @@ struktura pakeista klase:
 
 
 Spartos skirtumas:
+
 ![image](https://user-images.githubusercontent.com/75576100/117547138-ac472b80-b036-11eb-8468-07f482627154.png)
 ![image](https://user-images.githubusercontent.com/75576100/117547142-b2d5a300-b036-11eb-99df-0ba74b597bed.png)
 
