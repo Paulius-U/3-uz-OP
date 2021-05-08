@@ -1,23 +1,20 @@
 #pragma once
 
-#include <vector>
-#include <list>
-#include <deque>
-#include <chrono>
-#include <iomanip>
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <algorithm>
-#include <random>
-
-struct duomenys
+class duomenys
 {
-    std::string Vardas;
-    std::string Pavarde;
-    double Vidurkio_Balas;
+    private:
+        std::string Vardas;
+        std::string Pavarde;
+        double Vidurkio_Balas;
+    public:
+        duomenys() : Vidurkio_Balas(0) { };
+        void set_Vardas(std::string);
+        void set_Pavarde(std::string);
+        void set_Vidurkio_Balas(double);
+        inline std::string get_Vardas() const { return Vardas; }
+        inline std::string get_Pavarde() const { return Pavarde; }
+        inline double get_Vidurkio_Balas() const { return Vidurkio_Balas; }
 };
-
 template <typename T>
 void Klaida(T&);
 void Pasirinkimas (char&, char, char);
@@ -31,23 +28,5 @@ double Vidurkis_Vector (std::vector <int>&, int);
 double Mediana_Vector (std::vector <int>&, int);
 void Data_Vector (std::vector<duomenys>&, char, char);
 void Failo_Skaitymas_Vector (std::vector<duomenys> &, std::string, char);
-void Dalinimas_Vector (std::vector<duomenys> &, std::vector<duomenys> &, std::vector<duomenys> &);
+void Dalinimas_Vector (std::vector<duomenys> &, std::vector<duomenys> &);
 void Spauzdinimas_Vector (std::vector<duomenys> &, char, std::string);
-void Listas (char, char);
-void Pazymiu_generavimas_List (duomenys*, char );
-double Galutinis_List (std::list <int> &, int, char);
-double Vidurkis_List (std::list <int> &, int);
-double Mediana_List (std::list <int> &, int );
-void Data_List (std::list<duomenys> &, char , char);
-void Failo_Skaitymas_List (std::list<duomenys> &, std::string, char);
-void Dalinimas_List (std::list<duomenys> &, std::list<duomenys> &, std::list<duomenys> &);
-void Spauzdinimas_List (std::list<duomenys> &, char, std::string);
-void Dequelas (char, char);
-void Pazymiu_generavimas_Deque (duomenys*, char);
-double Galutinis_Deque (std::deque <int> &, int, char );
-double Vidurkis_Deque (std::deque <int> &, int);
-double Mediana_Deque (std::deque <int> &, int);
-void Data_Deque (std::deque<duomenys> &, char, char);
-void Failo_Skaitymas_Deque (std::deque<duomenys> &, std::string, char);
-void Dalinimas_Deque (std::deque<duomenys> &, std::deque<duomenys> &, std::deque<duomenys> &);
-void Spauzdinimas_Deque (std::deque<duomenys> &, char, std::string);
