@@ -14,23 +14,20 @@ class duomenys
         inline std::string get_Vardas() const { return Vardas; }
         inline std::string get_Pavarde() const { return Pavarde; }
         inline double get_Vidurkio_Balas() const { return Vidurkio_Balas; }
-        friend std::ostream& operator << (std::ostream& out, duomenys& s)
+        ~duomenys() {};
+        duomenys (const duomenys& v)
         {
-            out << s.Vardas << " " << s.Pavarde << " " << s.Vidurkio_Balas << "\n";
-            return out;
+            v.get_Vardas() == Vardas; 
+            v.get_Pavarde() == Pavarde;
+            v.get_Vidurkio_Balas() == Vidurkio_Balas;
         }
-        friend std::istream& operator >> (std::istream& in, duomenys & s)
+        duomenys& operator = (const duomenys& v)
         {
-            in >> s.Vardas >> s.Pavarde >> s.Vidurkio_Balas;
-            return in;
-        }
-        bool operator == (const duomenys & s)
-        {
-            return (Vardas == s.get_Vardas() && Pavarde == s.get_Pavarde());
-        }
-        bool operator != (const duomenys & s)
-        {
-            return !(*this == s);
+            if(&v ==this) return* this;
+
+            Vardas = get_Vardas();
+            Pavarde = get_Pavarde();
+            Vidurkio_Balas = get_Vidurkio_Balas();
         }
 };
 template <typename T>
