@@ -153,3 +153,8 @@ Flegu sparta:
 
 ![image](https://user-images.githubusercontent.com/75576100/117547160-cf71db00-b036-11eb-87ac-544e827e7039.png)
 
+
+1.2v 
+
+
+Kodas sutvarkytas veikimui su principu "Rule of Three"
