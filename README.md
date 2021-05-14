@@ -159,4 +159,5 @@ Flegu sparta:
 
 Kodas sutvarkytas veikimui su principu "Rule of Three"
 
-![image](https://user-images.githubusercontent.com/75576100/118190515-e310ad80-b44b-11eb-935e-bf3caec53817.png)
+![image](https://user-images.githubusercontent.com/75576100/118229101-11b27680-b494-11eb-962e-442fa247f141.png)
+
