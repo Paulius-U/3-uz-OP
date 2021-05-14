@@ -14,21 +14,16 @@ class duomenys
         inline std::string get_Vardas() const { return Vardas; }
         inline std::string get_Pavarde() const { return Pavarde; }
         inline double get_Vidurkio_Balas() const { return Vidurkio_Balas; }
-        ~duomenys() {};
-        duomenys (const duomenys& v)
-        {
-            v.get_Vardas() == Vardas; 
-            v.get_Pavarde() == Pavarde;
-            v.get_Vidurkio_Balas() == Vidurkio_Balas;
-        }
-        duomenys& operator = (const duomenys& v)
-        {
-            if(&v ==this) return* this;
 
-            Vardas = get_Vardas();
-            Pavarde = get_Pavarde();
-            Vidurkio_Balas = get_Vidurkio_Balas();
+        duomenys (const duomenys& v) : Vardas(v.get_Vardas()), Pavarde(v.get_Pavarde()), Vidurkio_Balas(v.get_Vidurkio_Balas()) {}
+        duomenys& operator = (const duomenys& v) 
+        {
+            Vardas = v.get_Vardas();
+            Pavarde = v.get_Pavarde();
+            Vidurkio_Balas = v.get_Vidurkio_Balas();
+            return *this;
         }
+        ~duomenys() {};
 };
 template <typename T>
 void Klaida(T&);
