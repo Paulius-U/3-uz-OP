@@ -7,7 +7,7 @@ class duomenys
         std::string Pavarde;
         double Vidurkio_Balas;
     public:
-        duomenys() : Vidurkio_Balas(0) { };
+        duomenys() : Vidurkio_Balas(0), Vardas(""), Pavarde("") { };
         void set_Vardas(std::string);
         void set_Pavarde(std::string);
         void set_Vidurkio_Balas(double);
