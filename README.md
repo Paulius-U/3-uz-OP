@@ -161,3 +161,10 @@ Kodas sutvarkytas veikimui su principu "Rule of Three"
 
 ![image](https://user-images.githubusercontent.com/75576100/118229101-11b27680-b494-11eb-962e-442fa247f141.png)
 
+
+1.5v
+
+Sudarytos dvi klasės duomenys ir asmuo:
+
+![image](https://user-images.githubusercontent.com/75576100/118764478-3dfa3880-b882-11eb-82ce-a393d52fa219.png)
+
