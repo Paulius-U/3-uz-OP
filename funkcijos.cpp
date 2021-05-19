@@ -1,6 +1,4 @@
 #include <vector>
-#include <list>
-#include <deque>
 #include <chrono>
 #include <iomanip>
 #include <iostream>
@@ -10,6 +8,32 @@
 #include <random>
 
 #include "funkcijos.hpp"
+
+asmuo::asmuo(std::string Vardas0, std::string Pavarde0)
+{
+    Vardas = Vardas0;
+    Pavarde = Pavarde0;
+}
+
+duomenys::duomenys(const duomenys& Sena_clase)
+{
+    Vardas = Sena_clase.Vardas;
+    Pavarde = Sena_clase.Pavarde;
+    Vidurkio_Balas = Sena_clase.Vidurkio_Balas;
+}
+
+void duomenys::set_Vardas(std::string naujas_Vardas)
+{
+    Vardas = naujas_Vardas;
+}
+void duomenys::set_Pavarde(std::string nauja_pavarde)
+{
+    Pavarde = nauja_pavarde;    
+}
+void duomenys::set_Vidurkio_Balas(double naujas_balas)
+{
+    Vidurkio_Balas = naujas_balas;
+}
 
 template <typename T>
 void Klaida(T& in)
@@ -49,19 +73,6 @@ void Pazymiai (int& in, int min, int max)
         std::cout << "Klaida. Pasirinkimas intervale nuo " << min << " iki " << max << "\n";
         Klaida(in);
     }
-}
-
-void duomenys::set_Vardas(std::string naujas_Vardas)
-{
-    Vardas = naujas_Vardas;
-}
-void duomenys::set_Pavarde(std::string nauja_pavarde)
-{
-    Pavarde = nauja_pavarde;    
-}
-void duomenys::set_Vidurkio_Balas(double naujas_balas)
-{
-    Vidurkio_Balas = naujas_balas;
 }
 
 void Vectorius (char Data, char Pazymys)
@@ -228,7 +239,6 @@ void Failo_Skaitymas_Vector (std::vector<duomenys> &A, std::string FileName, cha
 void Dalinimas_Vector (std::vector<duomenys> &A, std::vector<duomenys> &B)
 {
     std::sort(A.begin(), A.end(), [](duomenys &s1, duomenys &s2) {return s1.get_Vidurkio_Balas() < s2.get_Vidurkio_Balas();});
-    //auto random = std::partition (A.begin(), A.end(), [](duomenys &i) {return (i.get_Vidurkio_Balas() < 5);});
     int random = 0;
     for (int i = 0; i < A.size(); i++)
         if(A[i].get_Vidurkio_Balas() < 5.0)
