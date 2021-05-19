@@ -1,21 +1,33 @@
 #pragma once
 
-class duomenys
+class asmuo
 {
-    private:
+    protected:
         std::string Vardas;
         std::string Pavarde;
-        double Vidurkio_Balas;
+
     public:
-        duomenys() : Vidurkio_Balas(0), Vardas(""), Pavarde("") { };
+        asmuo(std::string, std::string);
+        asmuo() {};
+        ~asmuo() {};
+        virtual void set_Vardas(std::string) = 0;
+        virtual void set_Pavarde(std::string) = 0;
+        std::string get_Vardas() const;
+        std::string get_Pavarde() const;
+};
+
+class duomenys: public asmuo
+{
+    public:
+        duomenys() : Vidurkio_Balas(0) {};
+        ~duomenys() {};        
         void set_Vardas(std::string);
         void set_Pavarde(std::string);
         void set_Vidurkio_Balas(double);
-        inline std::string get_Vardas() const { return Vardas; }
-        inline std::string get_Pavarde() const { return Pavarde; }
-        inline double get_Vidurkio_Balas() const { return Vidurkio_Balas; }
-
-        duomenys (const duomenys& v) : Vardas(v.get_Vardas()), Pavarde(v.get_Pavarde()), Vidurkio_Balas(v.get_Vidurkio_Balas()) {}
+        std::string get_Vardas() const { return Vardas; }
+        std::string get_Pavarde() const { return Pavarde; }
+        double get_Vidurkio_Balas() const { return Vidurkio_Balas; }
+        duomenys (const duomenys&);
         duomenys& operator = (const duomenys& v) 
         {
             Vardas = v.get_Vardas();
@@ -23,7 +35,8 @@ class duomenys
             Vidurkio_Balas = v.get_Vidurkio_Balas();
             return *this;
         }
-        ~duomenys() {};
+    private:
+        double Vidurkio_Balas;
 };
 template <typename T>
 void Klaida(T&);
