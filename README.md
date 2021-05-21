@@ -174,3 +174,6 @@ Sudarytos dvi klasės duomenys ir asmuo:
 Programai padaryti testai
 
 ![image](https://user-images.githubusercontent.com/75576100/119089851-75e4b580-ba13-11eb-8917-ff6cdf7cb3ec.png)
+
+
+testas
