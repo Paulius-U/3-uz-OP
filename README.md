@@ -168,3 +168,9 @@ Sudarytos dvi klasės duomenys ir asmuo:
 
 ![image](https://user-images.githubusercontent.com/75576100/118764478-3dfa3880-b882-11eb-82ce-a393d52fa219.png)
 
+
+2.0v
+
+Programai padaryti testai
+
+![image](https://user-images.githubusercontent.com/75576100/119089851-75e4b580-ba13-11eb-8917-ff6cdf7cb3ec.png)
